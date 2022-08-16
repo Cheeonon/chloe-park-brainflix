@@ -1,0 +1,72 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/colors' as *;
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $mobileBasicSpacing;
+
+    &__logo{
+        height: 1.5rem;
+        background-color: white;
+    }
+
+    &__search{
+        margin: $mobileBasicSpacing;
+        width: 100%;
+        height: 2.5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__search-container{
+        border: $Mercury solid 1px;
+        border-radius: $bordeRadius;
+        padding: 0.3rem 0.7rem;
+        width: 70%;
+        display: flex;
+    }
+
+    &__search-bar{
+        border: none;
+        margin-left: 0.5rem;
+    }
+
+    &__profile{
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: left 1%;
+
+        &--hidden{
+            display: none;
+        }
+    }
+
+    &__upload{
+        height: 2.5rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__upload-container{
+        display: flex;
+        background-color: $BrainFlix-Blue;
+        border-radius: $bordeRadius;
+        font-size: $buttonFontSize;
+        width: 100%;
+        padding: 0.3rem 0.7rem;
+    }
+
+    &__upload-button{
+        border: none;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        color: white;
+        text-transform: uppercase;
+    }
+}
