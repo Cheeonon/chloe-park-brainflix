@@ -1,9 +1,14 @@
 @use './partials/fonts';
+@use './partials/typography';
 
 *{
     font-family: Avenir;
 }
 
 body{
+    margin: 0;
+}
+
+h1{
     margin: 0;
 }

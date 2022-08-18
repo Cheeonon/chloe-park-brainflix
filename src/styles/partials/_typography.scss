@@ -1,9 +1,26 @@
+@use './mixins' as *;
+
 h1{
     font-weight: bold;
     font-size: 1.5rem;
+
+    @include tablet{
+        font-size: 2rem;
+    }
+
 }
 
 h2{
     font-weight: normal;
     font-size: 0.75rem;
+}
+
+p{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+
+    @include tablet{
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
 }

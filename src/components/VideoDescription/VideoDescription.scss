@@ -1,0 +1,82 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/colors' as *;
+
+.video-desc{
+    margin: 0 $mobileBasicSpacing;
+
+    @include tablet{
+        margin: 0 $tabletBasicSpacing;
+    }
+
+    @include desktop{
+        margin: 0 $desktopBasicSpacing;
+    }
+
+    &__title{
+        padding: $mobileBasicSpacing 0;
+        border-bottom: 1px solid $Mercury;
+
+        @include tablet{
+            padding-top: calc($mobileBasicSpacing + 0.5rem);
+            border: none;
+        }
+
+        @include desktop{
+            padding-top: calc($mobileBasicSpacing + 1rem);
+        }
+    }
+
+    &__info{
+        display: flex;
+        color: $Silver;
+        padding: $mobileBasicSpacing 0;
+        border-bottom: 1px solid $Mercury;
+        font-size: 0.9rem;
+
+        @include tablet{
+            padding: 0;
+            justify-content: space-between;
+        }
+
+        @include desktop{
+            padding-bottom: 0.5rem;
+        }
+
+        &--first{
+            margin-bottom: 0.5rem;
+
+            @include tablet{
+                 margin-right: 2rem;
+            }
+        }
+    }
+
+    &__info-section{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        @include tablet{
+            flex-direction: row;
+            width: unset;
+        }
+    }
+
+    &__channel{
+        color: black;
+        font-weight: bold;
+    }
+
+    &__icon{
+        margin-right: 0.5rem;
+    }
+
+    &__body{
+        margin: $mobileBasicSpacing 0;
+
+        @include tablet{
+            margin: calc($mobileBasicSpacing + 0.5rem) 0;
+        }
+    }
+}
