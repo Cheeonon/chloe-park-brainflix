@@ -10,6 +10,12 @@
 
     @include tablet{
         flex-direction: row;
+        padding: 0 $tabletBasicSpacing;
+    }
+
+    @include desktop{
+        flex-direction: row;
+        padding: 0 $desktopBasicSpacing;
     }
 
     &__logo{

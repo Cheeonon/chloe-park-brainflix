@@ -1,8 +1,27 @@
+@use '../../styles/partials/mixins' as *;
+
 .video{
-    width: 100%;
+
+    &__container{
+        width: 100%;    
+
+        @include tablet{
+            text-align: center;
+            background-color: black;
+        }
+    
+    }
 
     &__player{
         width: 100vw;
+
+        @include tablet{
+            width: 90vw;
+        }
+
+        @include desktop{
+            width: 70vw;
+        }
     }
 
 }
