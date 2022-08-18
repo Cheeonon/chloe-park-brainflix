@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import './Header.scss'
 import logoUrl from '../../assets/logo/BrainFlix-logo.svg';
 import profileUrl from '../../assets/images/Mohan-muruge.jpg';
@@ -16,14 +17,22 @@ export default function Header(){
                     <img className="nav__search-icon" src={searchUrl} alt="search bar"/>
                     <input className="nav__search-bar" type="text" placeholder='Search'/>
                 </div>
-                <img className="nav__profile" src={profileUrl}></img>
+                <img     
+                    className="nav__profile nav__profile--mobile"
+                    src={profileUrl}>    
+                </img>
             </div>
             <div className="nav__upload">
                 <div className="nav__upload-container">
                     <img className="nav__upload-icon" src={uploadUrl} alt="upload button"/>
                     <button className="nav__upload-button">Upload</button>
                 </div>
-                <img className="nav__profile nav__profile--hidden" src={profileUrl}></img>
+                <img     
+                    className="nav__profile nav__profile--tablet"
+                    src={profileUrl}>    
+                </img>
+
+                
             </div>
         </header>
     )

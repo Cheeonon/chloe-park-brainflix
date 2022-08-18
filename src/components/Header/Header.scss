@@ -1,5 +1,6 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
 
 .nav{
     display: flex;
@@ -7,49 +8,88 @@
     align-items: center;
     padding: $mobileBasicSpacing;
 
+    @include tablet{
+        flex-direction: row;
+    }
+
     &__logo{
         height: 1.5rem;
         background-color: white;
+
+        @include tablet{
+            margin-right: 15%;
+        }
+
+        @include desktop{
+            margin-right: 50%;
+        }
     }
 
     &__search{
-        margin: $mobileBasicSpacing;
         width: 100%;
-        height: 2.5rem;
+        height: $headerSpacing;
+        margin: $mobileBasicSpacing;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    &__search-icon{
+        height: 60%;
     }
 
     &__search-container{
         border: $Mercury solid 1px;
         border-radius: $bordeRadius;
         padding: 0.3rem 0.7rem;
-        width: 70%;
+        width: 90%;
         display: flex;
+        align-items: center;
     }
 
     &__search-bar{
         border: none;
         margin-left: 0.5rem;
+        width: 100%;
+        height: 100%;
     }
 
     &__profile{
-        height: 2.5rem;
-        width: 2.5rem;
+        height: $headerSpacing;
+        width: $headerSpacing;
         border-radius: 50%;
         object-fit: cover;
         object-position: left 1%;
+        margin-left: $mobileBasicSpacing;
 
-        &--hidden{
+        &--mobile{
+            @include tablet{
+                display: none;
+            }
+        }
+
+        &--tablet{
             display: none;
+            @include tablet{
+                display: initial;
+            }
         }
     }
 
     &__upload{
-        height: 2.5rem;
+        height: $headerSpacing;
         display: flex;
         width: 100%;
         justify-content: space-between;
+        @include tablet{
+            flex-shrink: 1.2;
+        }
+        @include desktop{
+            flex-shrink: 1.1;
+        }
+    }
+
+    &__upload-icon{
+        height: 70%;
     }
 
     &__upload-container{
@@ -59,6 +99,7 @@
         font-size: $buttonFontSize;
         width: 100%;
         padding: 0.3rem 0.7rem;
+        align-items: center;
     }
 
     &__upload-button{
