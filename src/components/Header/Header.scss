@@ -60,12 +60,6 @@
     }
 
     &__profile{
-        height: $headerSpacing;
-        width: $headerSpacing;
-        border-radius: 50%;
-        object-fit: cover;
-        object-position: left 1%;
-        margin-left: $mobileBasicSpacing;
 
         &--mobile{
             @include tablet{
