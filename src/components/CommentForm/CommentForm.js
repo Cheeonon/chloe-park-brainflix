@@ -12,8 +12,10 @@ const CommentForm = () => {
            <Profile customClass="comment-form__profile" url={profileUrl} alt="Mohan Muruge"/>
             <form className="comment-form__add" >
                 <span className="comment-form__title">Join the conversation</span>
-                <textarea className="comment-form__input" placeholder='Add a new comment' ></textarea>
-                <Button customClass="comment-form__button" url={commentIconUrl} text="Comment"/>
+                <div className="comment-form__field">
+                  <textarea className="comment-form__input" placeholder='Add a new comment' ></textarea>
+                  <Button url={commentIconUrl} text="Comment"/>
+                </div>
             </form>
         </div>
     </div>

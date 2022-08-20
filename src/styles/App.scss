@@ -1,12 +1,13 @@
 @use './partials/fonts';
 @use './partials/typography';
 
-*{
-    font-family: Avenir;
+*, *::before, *::after{
+    box-sizing: border-box;
 }
 
-body{
+*{
     margin: 0;
+    font-family: Avenir;
 }
 
 h1{

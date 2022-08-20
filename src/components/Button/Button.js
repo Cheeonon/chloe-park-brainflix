@@ -1,8 +1,8 @@
 import './Button.scss';
 
-const Button = ({customClass, url, text}) => {
+const Button = ({url, text}) => {
   return (
-    <div className={`button ${customClass}`}>
+    <div className={"button"}>
         <img className={"button__icon"} src={url} alt={url}/>
         <button className="button__btn">{text}</button>
     </div>
