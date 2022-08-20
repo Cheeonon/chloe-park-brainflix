@@ -1,6 +1,7 @@
 import './Profile.scss';
 
 const Profile = ({customClass, url, alt}) => {
+  // return div tag instead of img tag when the a user doesn't have profile url
   if(url==""){
     return(
       <div 

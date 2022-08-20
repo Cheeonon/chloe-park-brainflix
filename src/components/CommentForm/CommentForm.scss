@@ -9,6 +9,11 @@
     padding: $mobileBasicSpacing 0;
     border-bottom: 1px solid $Mercury;
     
+    @include tablet{
+        margin: 0 $tabletBasicSpacing;
+        padding: calc($mobileBasicSpacing + 1rem) 0;
+    }
+
     &__count{
         margin-bottom: $mobileBasicSpacing;
         font-size: 0.9rem;

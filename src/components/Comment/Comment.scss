@@ -1,23 +1,29 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
 
 .comment{
     margin: 0 $mobileBasicSpacing;
     padding: $mobileBasicSpacing 0;
     display: flex;
     border-bottom: 1px solid $Mercury;
+    flex-shrink: 1 0 auto;
+
+    @include tablet{
+        margin: 0 $tabletBasicSpacing;
+        padding: calc($mobileBasicSpacing + 1rem) 0;
+    }
 
     &__container{
         display: flex;
         flex-direction: column;
-        width: 80%;
         margin-left: 1rem;
     }
 
     &__info{
         display: flex;
         justify-content: space-between;
-        margin-bottom: $mobileBasicSpacing;
+        margin-bottom: 0.5rem;
         font-size: 0.85rem;
     }
 
@@ -27,5 +33,9 @@
 
     &__date{
         color: $Silver;
+    }
+
+    &__profile{
+        min-width: $headerSpacing;
     }
 }
