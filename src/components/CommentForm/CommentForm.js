@@ -9,12 +9,11 @@ const CommentForm = () => {
     <div className="comment-form">
         <span className="comment-form__count">3 Comments</span>
         <div className="comment-form__container">
-           <Profile className="" url={profileUrl}/>
-            {/* <img className="comment-form__profile" src={profileUrl} alt="" /> */}
+           <Profile customClass="comment-form__profile" url={profileUrl} alt="Mohan Muruge"/>
             <form className="comment-form__add" >
-                <span>Join the conversation</span>
-                <input type="text" />
-                <Button url={commentIconUrl} text="Comment"/>
+                <span className="comment-form__title">Join the conversation</span>
+                <textarea className="comment-form__input" placeholder='Add a new comment' ></textarea>
+                <Button customClass="comment-form__button" url={commentIconUrl} text="Comment"/>
             </form>
         </div>
     </div>

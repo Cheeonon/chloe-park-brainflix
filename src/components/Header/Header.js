@@ -19,11 +19,11 @@ export default function Header(){
                     <img className="nav__search-icon" src={searchIconUrl} alt="search bar"/>
                     <input className="nav__search-bar" type="text" placeholder='Search'/>
                 </div>
-                <Profile className="nav__profile--mobile" url={profileUrl}/>
+                <Profile customClass="nav__profile--mobile" url={profileUrl} alt="Mohan Muruge"/>
             </div>
             <div className="nav__upload">
                 <Button url={uploadIconUrl} text="Upload" />
-                <Profile className="nav__profile--tablet" url={profileUrl}/>
+                <Profile customClass="nav__profile--tablet" url={profileUrl}/>
             </div>
         </header>
     )
