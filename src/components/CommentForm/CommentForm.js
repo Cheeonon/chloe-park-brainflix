@@ -15,7 +15,7 @@ const CommentForm = () => {
                 <div className="comment-form__field">
                   <textarea className="comment-form__input" placeholder='Add a new comment' ></textarea>
                   <Button url={commentIconUrl} text="Comment"/>
-                </div>
+                </div> 
             </form>
         </div>
     </div>

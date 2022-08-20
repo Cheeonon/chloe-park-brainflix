@@ -6,7 +6,7 @@ import profileUrl from '../../assets/images/Mohan-muruge.jpg';
 const Comment = () => {
   return (
     <div className="comment">
-        <Profile url={profileUrl}/>
+        <Profile url=""/>
         <div className="comment__container">
             <div className="comment__info">
                 <span className="comment__name">Micheal Lyons</span>
