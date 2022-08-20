@@ -1,3 +1,4 @@
+import Comments from '../Comments/Comments';
 import VideoDescription from '../VideoDescription/VideoDescription';
 import './Video.scss';
 
@@ -12,6 +13,7 @@ const Video = () => {
             </video>    
         </div>
         <VideoDescription />
+        <Comments />
     </section>
   )
 }
