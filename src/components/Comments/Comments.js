@@ -1,10 +1,13 @@
+import Comment from "../Comment/Comment"
 import CommentForm from "../CommentForm/CommentForm"
 
 const Comments = () => {
   return (
     <>
         <CommentForm />
-        <div>Comments</div>
+        <Comment />
+        <Comment />
+        <Comment />
     </>
   )
 }
