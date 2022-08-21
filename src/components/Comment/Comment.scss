@@ -3,15 +3,16 @@
 @use '../../styles/partials/mixins' as *;
 
 .comment{
-    margin: 0 $mobileBasicSpacing;
     padding: $mobileBasicSpacing 0;
     display: flex;
     border-bottom: 1px solid $Mercury;
-    flex-shrink: 1 0 auto;
 
     @include tablet{
-        margin: 0 $tabletBasicSpacing;
         padding: calc($mobileBasicSpacing + 1rem) 0;
+    }
+
+    @include desktop{
+        padding-right: 2rem;
     }
 
     &__container{

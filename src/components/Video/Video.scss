@@ -1,8 +1,10 @@
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/variables' as *;
 
 .video{
 
-    &__container{
+    &__video-container{
         width: 100%;    
 
         @include tablet{
@@ -21,6 +23,28 @@
 
         @include desktop{
             width: 70vw;
+        }
+    }
+
+    &__content-container{
+        
+        @include desktop{
+            display: flex;
+            margin: 0 $desktopBasicSpacing;
+        }
+    }
+
+    &__content{
+
+        @include desktop{
+            border-right: 1px solid $Mercury;
+        }
+    }
+
+    &__side{
+
+        @include desktop{
+            min-width: 28%;
         }
     }
 

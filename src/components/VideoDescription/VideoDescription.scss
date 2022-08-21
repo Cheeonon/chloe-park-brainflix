@@ -9,8 +9,8 @@
         margin: 0 $tabletBasicSpacing;
     }
 
-    @include desktop{
-        margin: 0 $desktopBasicSpacing;
+    @include tablet{
+        margin: 0;
     }
 
     &__title{
@@ -41,6 +41,7 @@
 
         @include desktop{
             padding-bottom: 0.5rem;
+            padding-right: 1rem;
         }
 
         &--first{
@@ -77,6 +78,10 @@
 
         @include tablet{
             margin: calc($mobileBasicSpacing + 0.5rem) 0;
+        }
+
+        @include desktop{
+            padding-right: 1rem;
         }
     }
 }

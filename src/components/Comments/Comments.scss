@@ -2,24 +2,15 @@
 @use '../../styles/partials/colors' as *;
 @use '../../styles/partials/mixins' as *;
 
-.next-videos{
+.comments{
     margin: 0 $mobileBasicSpacing;
-
+    
     @include tablet{
         margin: 0 $tabletBasicSpacing;
     }
-    
+
     @include desktop{
-        margin: 0 1.5rem;
+        margin: 0;
     }
 
-    &__title{
-        text-transform: uppercase;
-        margin: $mobileBasicSpacing 0;
-        color: $Silver;
-
-        @include tablet{
-            margin: 2rem 0 1rem 0;
-        }
-    }
 }
