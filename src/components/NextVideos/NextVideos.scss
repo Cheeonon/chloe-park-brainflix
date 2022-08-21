@@ -1,0 +1,17 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
+
+.next-videos{
+    margin: 0 $mobileBasicSpacing;
+
+    @include tablet{
+        margin: 0 $tabletBasicSpacing;
+    }
+    
+    &__title{
+        text-transform: uppercase;
+        margin: $mobileBasicSpacing 0;
+        color: $Silver;
+    }
+}

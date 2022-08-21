@@ -1,0 +1,30 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/colors' as *;
+
+.next-video{
+    display: flex;
+    margin-bottom: 0.7rem;
+
+    &__image{
+        width: 9rem;
+        height: 3.5rem;
+        object-fit: cover;
+        border-radius: $bordeRadius;
+        background-color: $Mercury;
+    }
+
+    &__info{
+        margin-left: $mobileBasicSpacing;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title{
+        font-weight: bold;
+    }
+
+    &__channel{
+
+    }
+}
