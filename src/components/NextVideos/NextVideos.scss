@@ -13,5 +13,9 @@
         text-transform: uppercase;
         margin: $mobileBasicSpacing 0;
         color: $Silver;
+
+        @include tablet{
+            margin: 2rem 0;
+        }
     }
 }

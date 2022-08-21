@@ -1,9 +1,15 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/colors' as *;
+@use '../../styles/partials/mixins' as *;
 
 .next-video{
     display: flex;
     margin-bottom: 0.7rem;
+
+    @include tablet{
+        width: 40%;
+        margin-bottom: 1rem;
+    }
 
     &__image{
         width: 9rem;
