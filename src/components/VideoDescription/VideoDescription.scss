@@ -9,7 +9,7 @@
         margin: 0 $tabletBasicSpacing;
     }
 
-    @include tablet{
+    @include desktop{
         margin: 0;
     }
 

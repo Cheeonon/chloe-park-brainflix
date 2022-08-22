@@ -16,6 +16,8 @@
 
     &__player{
         width: 100vw;
+        height: 25vh;
+        object-fit: cover;
 
         @include tablet{
             width: 90vw;

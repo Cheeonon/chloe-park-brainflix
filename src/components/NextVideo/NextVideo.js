@@ -1,12 +1,14 @@
 import './NextVideo.scss';
 
-const NextVideo = () => {
+const NextVideo = (video) => {
+  const imgUrl = video.video.image;
+
   return (
     <div className="next-video">
-        <img src="https://i.imgur.com/5qyCZrD.jpg" alt="" className="next-video__image" />
+        <img src={imgUrl} alt="" className="next-video__image" />
         <div className="next-video__info">
-            <h3 className="next-video__title">Become A Travel Pro In One Easy Lesson</h3>
-            <span className="next-video__channel">Todd Welch</span>
+            <h3 className="next-video__title">{video.video.title}</h3>
+            <span className="next-video__channel">{video.video.channel}</span>
         </div>
     </div>
   )
