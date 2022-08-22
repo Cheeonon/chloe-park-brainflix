@@ -15,7 +15,7 @@
 
     &__title{
         padding: $mobileBasicSpacing 0;
-        border-bottom: 1px solid $Mercury;
+        border-bottom: 1px solid $Border-Color;
 
         @include tablet{
             padding-top: calc($mobileBasicSpacing + 0.5rem);
@@ -29,9 +29,9 @@
 
     &__info{
         display: flex;
-        color: $Silver;
+        color: $Sub-Color;
         padding: $mobileBasicSpacing 0;
-        border-bottom: 1px solid $Mercury;
+        border-bottom: 1px solid $Border-Color;
         font-size: 0.9rem;
 
         @include tablet{
@@ -75,6 +75,7 @@
 
     &__body{
         margin: $mobileBasicSpacing 0;
+        min-height: 7rem;
 
         @include tablet{
             margin: calc($mobileBasicSpacing + 0.5rem) 0;

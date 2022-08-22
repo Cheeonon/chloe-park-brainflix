@@ -5,7 +5,7 @@
 .comment{
     padding: $mobileBasicSpacing 0;
     display: flex;
-    border-bottom: 1px solid $Mercury;
+    border-bottom: 1px solid $Border-Color;
 
     @include tablet{
         padding: calc($mobileBasicSpacing + 1rem) 0;
@@ -33,7 +33,7 @@
     }
 
     &__date{
-        color: $Silver;
+        color: $Sub-Color;
     }
 
     &__profile{

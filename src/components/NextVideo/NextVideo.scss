@@ -20,7 +20,7 @@
         height: 3.5rem;
         object-fit: cover;
         border-radius: $bordeRadius;
-        background-color: $Mercury;
+        background-color: $Border-Color;
 
         @include desktop{
             height: 4rem;

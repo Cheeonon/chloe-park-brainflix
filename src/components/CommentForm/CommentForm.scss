@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     padding: $mobileBasicSpacing 0;
-    border-bottom: 1px solid $Mercury;
+    border-bottom: 1px solid $Border-Color;
     
     @include tablet{
         padding: calc($mobileBasicSpacing + 1rem) 0;
@@ -41,7 +41,7 @@
         margin-bottom: 0.5rem;
         text-transform: uppercase;
         font-weight: bold;
-        color: $Silver;
+        color: $Sub-Color;
     }
 
     &__field{
@@ -55,7 +55,7 @@
     }
 
     &__input{
-        border: $Mercury solid 1px;
+        border: $Border-Color solid 1px;
         border-radius: $bordeRadius;
         height: 5rem;
         width: 100%;

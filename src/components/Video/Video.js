@@ -8,17 +8,23 @@ import {useState} from 'react';
 
 // data
 import videos from '../../data/videos.json';
-import videoDetail from '../../data/video-details.json';
+import videosDetail from '../../data/video-details.json';
 
 const Video = () => {
-  // console.log(videos); // for next videos
-  // console.log(videoDetail); // for video details
 
-// 처음엔 비디오랑 비디오디테일 id 비교 후 똑같으면 비디오디테일 불러오기
-
-const [currentVideo, setCurrentVideo] = useState(videoDetail[1]);
+const [currentVideo, setCurrentVideo] = useState(videosDetail[1]);
 const currentVideoImgUrl = currentVideo.image;
+const changeCurrentVideo = (video) => {
 
+  // scroll to the selected video player
+  document.querySelector(".video__player").scrollIntoView({behavior: "smooth"});
+  videosDetail.forEach(videoDetail => {
+    if(video.id === videoDetail.id){
+      setCurrentVideo(videoDetail);
+    }
+  })
+
+}
 
   return (
     <section className="video">
@@ -35,7 +41,7 @@ const currentVideoImgUrl = currentVideo.image;
             <Comments comments={currentVideo.comments}/>
           </div>
           <div className="video__side">
-            <NextVideos videos={videos}/>  
+            <NextVideos videos={videos} currentVideo={currentVideo} changeCurrentVideo={changeCurrentVideo} />  
           </div>
         </div>
     </section>

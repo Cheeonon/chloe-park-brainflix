@@ -16,7 +16,7 @@
 
     &__player{
         width: 100vw;
-        height: 25vh;
+        min-height: 25vh;
         object-fit: cover;
 
         @include tablet{
@@ -39,7 +39,7 @@
     &__content{
 
         @include desktop{
-            border-right: 1px solid $Mercury;
+            border-right: 1px solid $Border-Color;
         }
     }
 
