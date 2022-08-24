@@ -1,8 +1,7 @@
 import NextVideo from "../NextVideo/NextVideo"
 import './NextVideos.scss';
 
-const NextVideos = ({videos, changeCurrentVideo, currentVideo}) => {
-  console.log(currentVideo);
+const NextVideos = ({videos, handleCurrentVideo, currentVideo}) => {
   return (
     <div className="next-videos">
         <h2 className="next-videos__title">Next Videos</h2>
@@ -13,7 +12,7 @@ const NextVideos = ({videos, changeCurrentVideo, currentVideo}) => {
             return;
           }
           return( 
-          <NextVideo key={index} video={video} changeCurrentVideo={changeCurrentVideo}/>
+          <NextVideo key={index} video={video} handleCurrentVideo={handleCurrentVideo}/>
           )
         }
         )}
