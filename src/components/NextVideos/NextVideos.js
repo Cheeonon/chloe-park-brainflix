@@ -1,18 +1,18 @@
 import NextVideo from "../NextVideo/NextVideo"
 import './NextVideos.scss';
 
-const NextVideos = ({videos, handleCurrentVideo, currentVideo}) => {
+const NextVideos = ({videos, currentVideo}) => {
   return (
     <div className="next-videos">
         <h2 className="next-videos__title">Next Videos</h2>
         
         {/* display except the one is selected */}
         {videos.map((video, index)=> {
-          if(video.id == currentVideo.id){
-            return;
+          if(video.id === currentVideo.id){
+            return null;
           }
           return( 
-          <NextVideo key={index} video={video} handleCurrentVideo={handleCurrentVideo}/>
+          <NextVideo key={index} video={video}/>
           )
         }
         )}
