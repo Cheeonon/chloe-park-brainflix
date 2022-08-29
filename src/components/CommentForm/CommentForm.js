@@ -3,8 +3,12 @@ import profileUrl from '../../assets/images/Mohan-muruge.jpg';
 import Button from '../Button/Button';
 import './CommentForm.scss';
 import Profile from '../Profile/Profile';
+import '../Button/Button.scss';
 
 const CommentForm = () => {
+  const handleDefault = (event) => {
+    event.preventDefault();
+  }
   return (
     <div className="comment-form">
         <span className="comment-form__count">3 Comments</span>
@@ -14,7 +18,10 @@ const CommentForm = () => {
                 <span className="comment-form__title">Join the conversation</span>
                 <div className="comment-form__field">
                   <textarea className="comment-form__input" placeholder='Add a new comment' ></textarea>
-                  <Button url={commentIconUrl} text="Comment"/>
+                  <div className="button">
+                    <img className="button__icon" src={commentIconUrl} alt={commentIconUrl}/>
+                    <button className="button__btn" onClick={handleDefault}>Comment</button>
+                  </div>
                 </div> 
             </form>
         </div>
