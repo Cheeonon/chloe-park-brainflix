@@ -7,11 +7,13 @@
     border-radius: $bordeRadius;
     font-size: $buttonFontSize;
     width: 100%;
-    padding: 0.5rem 0.7rem;
+    padding: 0.6rem 0.7rem;
     align-items: center;
+    position: relative;
 
     &__icon{
-        height: 90%;
+        position: absolute;
+        height: 1.5rem;
     }
     &__btn{
         border: none;
@@ -20,5 +22,14 @@
         background-color: transparent;
         color: white;
         text-transform: uppercase;
+        font-weight: bold;
     }
+}
+
+.color__Primary-Color{
+    color: $Primary-Color;
+}
+
+.background__white{
+    background-color: white;
 }

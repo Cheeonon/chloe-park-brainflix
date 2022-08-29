@@ -1,8 +1,11 @@
+import UploadVideo from "../../components/UploadVideo/UploadVideo"
 
 const UploadPage = () => {
   return (
-    <div>UploadPage</div>
-  )
+    <>
+      <UploadVideo />
+    </>
+    )
 }
 
 export default UploadPage

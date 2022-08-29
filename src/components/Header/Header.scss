@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     padding: $mobileBasicSpacing;
+    border-bottom: 1px solid $Border-Color;
 
     @include tablet{
         flex-direction: row;
@@ -89,5 +90,9 @@
         @include desktop{
             flex-shrink: 1.1;
         }
+    }
+
+    &__button{
+        width: 100%;
     }
 }

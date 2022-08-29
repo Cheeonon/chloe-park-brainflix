@@ -14,7 +14,7 @@ const Profile = ({customClass, url, alt}) => {
       className={`profile ${customClass}`}
       src={url}
       alt={alt}>    
-    </img>
+    </img> 
     )
   }
 }

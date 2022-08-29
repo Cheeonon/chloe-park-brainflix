@@ -25,7 +25,7 @@ export default function Header(){
                 <Profile customClass="nav__profile--mobile" url={profileUrl} alt="Mohan Muruge"/>
             </div>
             <div className="nav__upload">
-                <NavLink to="/upload">
+                <NavLink to="/upload" className="nav__button">
                    <Button url={uploadIconUrl} text="Upload" />
                 </NavLink>
                 <Profile customClass="nav__profile--tablet" url={profileUrl}/>
