@@ -5,15 +5,15 @@
 .comment-form{
     display: flex;
     flex-direction: column;
-    padding: $mobileBasicSpacing 0;
-    border-bottom: 1px solid $Border-Color;
+    padding: $mobile-basic-spacing 0;
+    border-bottom: 1px solid $border-color;
     
     @include tablet{
-        padding: calc($mobileBasicSpacing + 1rem) 0;
+        padding: calc($mobile-basic-spacing + 1rem) 0;
     }
 
     &__count{
-        margin-bottom: $mobileBasicSpacing;
+        margin-bottom: $mobile-basic-spacing;
         font-size: 0.9rem;
         font-weight: bold;
     }
@@ -31,7 +31,7 @@
     &__add{
         display: flex;
         flex-direction: column;
-        margin-left: $mobileBasicSpacing;
+        margin-left: $mobile-basic-spacing;
         width: 90%;
     }
 
@@ -41,7 +41,7 @@
         margin-bottom: 0.5rem;
         text-transform: uppercase;
         font-weight: bold;
-        color: $Sub-Color;
+        color: $sub-color;
     }
 
     &__field{
@@ -55,17 +55,17 @@
     }
 
     &__input{
-        border: $Border-Color solid 1px;
-        border-radius: $bordeRadius;
+        border: $border-color solid 1px;
+        border-radius: $borde-radius;
         height: 5rem;
         width: 100%;
-        margin-bottom: $mobileBasicSpacing;
+        margin-bottom: $mobile-basic-spacing;
         resize: none;
         padding: 0.5rem 0.8rem;
 
         @include tablet{
             height: 100%;
-            margin-right: $mobileBasicSpacing;
+            margin-right: $mobile-basic-spacing;
             flex-shrink: 0.4;
         }
     }

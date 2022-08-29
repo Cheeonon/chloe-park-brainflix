@@ -3,14 +3,14 @@
 @use '../../styles/partials/mixins' as *;
 
 .comments{
-    margin: 0 $mobileBasicSpacing;
+    margin: 0 $mobile-basic-spacing;
     
     @include tablet{
-        margin: 0 $tabletBasicSpacing;
+        margin: 0 $tablet-basic-spacing;
     }
 
     @include desktop{
-        margin: 0 $desktopBasicSpacing;
+        margin: 0 $desktop-basic-spacing;
     }
 
 }

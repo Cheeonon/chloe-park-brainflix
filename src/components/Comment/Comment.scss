@@ -3,12 +3,12 @@
 @use '../../styles/partials/mixins' as *;
 
 .comment{
-    padding: $mobileBasicSpacing 0;
+    padding: $mobile-basic-spacing 0;
     display: flex;
-    border-bottom: 1px solid $Border-Color;
+    border-bottom: 1px solid $border-color;
 
     @include tablet{
-        padding: calc($mobileBasicSpacing + 1rem) 0;
+        padding: calc($mobile-basic-spacing + 1rem) 0;
     }
 
     @include desktop{
@@ -33,10 +33,10 @@
     }
 
     &__date{
-        color: $Sub-Color;
+        color: $sub-color;
     }
 
     &__profile{
-        min-width: $headerSpacing;
+        min-width: $header-spacing;
     }
 }

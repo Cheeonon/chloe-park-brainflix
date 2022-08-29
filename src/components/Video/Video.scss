@@ -32,14 +32,14 @@
         
         @include desktop{
             display: flex;
-            margin: 0 $desktopBasicSpacing;
+            margin: 0 $desktop-basic-spacing;
         }
     }
 
     &__content{
 
         @include desktop{
-            border-right: 1px solid $Border-Color;
+            border-right: 1px solid $border-color;
         }
     }
 

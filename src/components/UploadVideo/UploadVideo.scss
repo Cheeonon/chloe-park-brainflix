@@ -5,22 +5,22 @@
 .upload{
     display: flex;
     flex-direction: column;
-    margin: 0 $mobileBasicSpacing;
+    margin: 0 $mobile-basic-spacing;
 
     @include tablet{
-        margin: 0 $tabletBasicSpacing;
+        margin: 0 $tablet-basic-spacing;
     }
 
     &__title{
-        margin: $mobileBasicSpacing 0;    
+        margin: $mobile-basic-spacing 0;    
         @include tablet{
-            padding-bottom: $mobileBasicSpacing;
-            border-bottom: 1px solid $Border-Color;
+            padding-bottom: $mobile-basic-spacing;
+            border-bottom: 1px solid $border-color;
         }
     }
 
     &__thumbnail{
-        border-radius: $bordeRadius;
+        border-radius: $borde-radius;
         @include tablet{
             width: 50%;
         }
@@ -31,7 +31,7 @@
     }
 
     &__subtitle{
-        color: $Sub-Color;
+        color: $sub-color;
         font-weight: bold;
         font-size: 0.85rem;
         margin-bottom: 0.3rem;
@@ -39,8 +39,8 @@
     }
 
     &__input{
-        border-radius: $bordeRadius;
-        border: 1px solid $Sub-Color;
+        border-radius: $borde-radius;
+        border: 1px solid $sub-color;
         padding: 0.5rem 0.8rem;
     }
 
@@ -89,7 +89,7 @@
 
         @include tablet{
             flex-direction: row-reverse;
-            border-top: 1px solid $Border-Color;
+            border-top: 1px solid $border-color;
             padding-top: 1.5rem;
             margin-top: 1.5rem;
         }

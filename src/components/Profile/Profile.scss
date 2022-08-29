@@ -2,10 +2,10 @@
 @use '../../styles/partials/colors' as *;
 
 .profile{
-    height: $headerSpacing;
-    width: $headerSpacing;
+    height: $header-spacing;
+    width: $header-spacing;
     border-radius: 50%;
     object-fit: cover;
     object-position: left 1%;
-    background-color: $Border-Color;
+    background-color: $border-color;
 }

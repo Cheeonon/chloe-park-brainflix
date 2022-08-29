@@ -6,17 +6,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: $mobileBasicSpacing;
-    border-bottom: 1px solid $Border-Color;
+    padding: $mobile-basic-spacing;
+    border-bottom: 1px solid $border-color;
 
     @include tablet{
         flex-direction: row;
-        padding: 0 $tabletBasicSpacing;
+        padding: 0 $tablet-basic-spacing;
     }
 
     @include desktop{
         flex-direction: row;
-        padding: 0 $desktopBasicSpacing;
+        padding: 0 $desktop-basic-spacing;
     }
 
     &__logo{
@@ -34,8 +34,8 @@
 
     &__search{
         width: 100%;
-        height: $headerSpacing;
-        margin: $mobileBasicSpacing;
+        height: $header-spacing;
+        margin: $mobile-basic-spacing;
         display: flex;
         justify-content: space-between;
     }
@@ -45,8 +45,8 @@
     }
 
     &__search-container{
-        border: $Border-Color solid 1px;
-        border-radius: $bordeRadius;
+        border: $border-color solid 1px;
+        border-radius: $borde-radius;
         padding: 0.3rem 0.7rem;
         width: 90%;
         display: flex;
@@ -63,7 +63,7 @@
     &__profile{
 
         &--mobile{
-            margin-left: $mobileBasicSpacing;
+            margin-left: $mobile-basic-spacing;
             @include tablet{
                 display: none;
             }
@@ -72,14 +72,14 @@
         &--tablet{
             display: none;
             @include tablet{
-                margin-left: $mobileBasicSpacing;
+                margin-left: $mobile-basic-spacing;
                 display: initial;
             }
         }
     }
 
     &__upload{
-        height: $headerSpacing;
+        height: $header-spacing;
         display: flex;
         width: 100%;
         justify-content: space-between;

@@ -3,35 +3,35 @@
 @use '../../styles/partials/colors' as *;
 
 .video-desc{
-    margin: 0 $mobileBasicSpacing;
+    margin: 0 $mobile-basic-spacing;
 
     @include tablet{
-        margin: 0 $tabletBasicSpacing;
+        margin: 0 $tablet-basic-spacing;
     }
 
     @include desktop{
-        margin: 0 $desktopBasicSpacing;
+        margin: 0 $desktop-basic-spacing;
     }
 
     &__title{
-        padding: $mobileBasicSpacing 0;
-        border-bottom: 1px solid $Border-Color;
+        padding: $mobile-basic-spacing 0;
+        border-bottom: 1px solid $border-color;
 
         @include tablet{
-            padding-top: calc($mobileBasicSpacing + 0.5rem);
+            padding-top: calc($mobile-basic-spacing + 0.5rem);
             border: none;
         }
 
         @include desktop{
-            padding-top: calc($mobileBasicSpacing + 1rem);
+            padding-top: calc($mobile-basic-spacing + 1rem);
         }
     }
 
     &__info{
         display: flex;
-        color: $Sub-Color; 
-        padding: $mobileBasicSpacing 0;
-        border-bottom: 1px solid $Border-Color;
+        color: $sub-color; 
+        padding: $mobile-basic-spacing 0;
+        border-bottom: 1px solid $border-color;
         font-size: 0.9rem;
 
         @include tablet{
@@ -74,11 +74,11 @@
     }
 
     &__body{
-        margin: $mobileBasicSpacing 0;
+        margin: $mobile-basic-spacing 0;
         min-height: 7rem;
 
         @include tablet{
-            margin: calc($mobileBasicSpacing + 0.5rem) 0;
+            margin: calc($mobile-basic-spacing + 0.5rem) 0;
         }
 
         @include desktop{
