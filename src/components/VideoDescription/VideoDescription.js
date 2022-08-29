@@ -21,7 +21,7 @@ const VideoDescription = ({currentVideo}) => {
                 <span>
                     <img className="video-desc__icon" src={likes} alt="" />
                     {currentVideo.likes}
-                </span>
+                </span> 
             </div>
         </div>
         <p className="video-desc__body">

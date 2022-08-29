@@ -1,5 +1,5 @@
 import './styles/App.scss';
-import Header from './components/Header/Header';
+import PageHeader from './components/PageHeader/PageHeader';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage/HomePage';
 import UploadPage from './pages/UploadPage/UploadPage';
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
-      <Header />
+      <PageHeader />
       <Routes>
         <Route path="/" element={<HomePage />} ></Route>
         <Route path="/upload" element={<UploadPage />}></Route>

@@ -4,7 +4,7 @@ import profileUrl from '../../assets/images/Mohan-muruge.jpg';
 import uploadIconUrl from '../../assets/icons/upload.svg';
 import searchIconUrl from '../../assets/icons/search.svg';
 
-import './Header.scss'
+import './PageHeader.scss'
 import Button from '../Button/Button';
 import Profile from '../Profile/Profile';
 import { NavLink } from 'react-router-dom';

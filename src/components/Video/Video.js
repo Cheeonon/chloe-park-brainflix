@@ -24,5 +24,5 @@ const Video = ({ videos, currentVideo }) => {
     </section>
 );
 }
-
+ 
 export default Video
