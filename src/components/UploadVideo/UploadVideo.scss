@@ -24,6 +24,10 @@
         @include tablet{
             width: 50%;
         }
+
+        @include desktop{
+            width: 90%;
+        }
     }
 
     &__subtitle{
@@ -44,10 +48,39 @@
         height: 5rem;
     }
 
+    &__sections{
+        @include desktop{
+            display: flex;
+            height: 12rem;
+        }
+    }
+
     &__section{
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
+
+        @include desktop{
+            margin-bottom: 0;
+            justify-content: space-between;
+        }
+
+        &--left{
+            @include desktop{
+                width: 30%;
+            }
+        }
+
+        &--right{
+            @include desktop{
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                height: 100%;
+                justify-content: space-between;
+            }
+        }
+        
     }
 
     &__button-container{

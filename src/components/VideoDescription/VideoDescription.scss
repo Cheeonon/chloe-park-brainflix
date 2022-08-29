@@ -10,7 +10,7 @@
     }
 
     @include desktop{
-        margin: 0;
+        margin: 0 $desktopBasicSpacing;
     }
 
     &__title{
@@ -29,7 +29,7 @@
 
     &__info{
         display: flex;
-        color: $Sub-Color;
+        color: $Sub-Color; 
         padding: $mobileBasicSpacing 0;
         border-bottom: 1px solid $Border-Color;
         font-size: 0.9rem;
