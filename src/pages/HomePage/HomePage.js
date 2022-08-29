@@ -21,6 +21,11 @@ const HomePage = () => {
         })
     }, [videosId]);
 
+    // scroll to top when a video is changed
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, [currentVideo]);
+
     // wait until receiving data and get the image url
     if (!currentVideo) {
         return null;
