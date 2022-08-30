@@ -1,6 +1,7 @@
 import NextVideo from "../NextVideo/NextVideo"
-import './NextVideos.scss';
+import './NextVideoSection.scss';
 
+// renders nextvideos
 const NextVideos = ({videos, currentVideo}) => {
   return (
     <div className="next-videos">

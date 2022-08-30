@@ -3,6 +3,8 @@ import views from '../../assets/icons/views.svg';
 import likes from '../../assets/icons/likes.svg';
 
 const VideoDescription = ({currentVideo}) => {
+// renders video description section
+
     const date = new Date(currentVideo.timestamp).toDateString();
 
   return (

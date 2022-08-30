@@ -11,17 +11,19 @@ const UploadVideo = () => {
     alert("Video Uploaded!");
     // redirect to home page
     navigate("/");
-  }
+  } 
+  
   return (
     <>
       <div className="upload"> 
         <h1 className="upload__title">Upload Video</h1>
+
         <div className="upload__sections">
           <div className="upload__section upload__section--left">
             <span className="upload__subtitle">Video Thumbnail</span>
             <img src={uploadThumbnail} alt="" className="upload__thumbnail" />
           </div>
-          <div className="upload__section--right">
+          <form className="upload__section--right">
             <div className="upload__section">
               <label htmlFor="title" className="upload__subtitle">Title Your Video</label>
               <input id="title" type="text" className="upload__input" placeholder="Add a title to your video"/>
@@ -30,11 +32,11 @@ const UploadVideo = () => {
               <label htmlFor="description" className="upload__subtitle">Add a Video Description</label>
               <textarea id="description" className="upload__input upload__textarea" placeholder="Add a description to your video"></textarea>
             </div> 
-          </div>
+          </form>
         </div>
         <div className="upload__button-container">
           <div className="upload__button" onClick={handleUpload}>
-            <Button url={publishIconUrl} text="Publish"/>
+            <Button type="submit" url={publishIconUrl} text="Publish"/>
           </div>
           <Link to="/" className="upload__button">
             <Button url="" text="Cancle" background="background__white" color="color__Primary-Color"/>

@@ -1,7 +1,8 @@
 import Comment from "../Comment/Comment"
 import CommentForm from "../CommentForm/CommentForm"
-import './Comments.scss';
+import './CommentSection.scss';
 
+// renders a comment form and comments
 const Comments = ({comments}) => {
   return (
     <div className="comments">

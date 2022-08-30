@@ -1,10 +1,11 @@
 import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import VideoDescription from '../VideoDescription/VideoDescription';
-import NextVideos from '../NextVideos/NextVideos';
-import Comments from '../Comments/Comments';
+import NextVideoSection from '../NextVideoSection/NextVideoSection';
+import CommentSection from '../CommentSection/CommentSection';
 
 
 const Video = ({ videos, currentVideo }) => {
+// renders every section for the page
 
   return (
     <section className="video">
@@ -12,10 +13,10 @@ const Video = ({ videos, currentVideo }) => {
         <div className="video__content-container">
             <div className="video__content">
                 <VideoDescription currentVideo={currentVideo} />
-                <Comments comments={currentVideo.comments} />
+                <CommentSection comments={currentVideo.comments} />
             </div>
             <div className="video__side">
-                <NextVideos
+                <NextVideoSection
                     videos={videos}
                     currentVideo={currentVideo}
                 />

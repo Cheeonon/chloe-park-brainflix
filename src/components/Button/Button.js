@@ -1,6 +1,8 @@
 import './Button.scss';
 
-const Button = ({url, text, background, color}) => {
+// customizable button
+const Button = ({url, text, background, color, type}) => {
+  
 // return div tag instead of img tag when the a user doesn't have image url
   if(url===""){
     return(
@@ -12,10 +14,10 @@ const Button = ({url, text, background, color}) => {
     return (
       <div className={"button"}>
           <img className={"button__icon"} src={url} alt={url}/>
-          <button className="button__btn">{text}</button>
+          <button className="button__btn" type={type}>{text}</button>
       </div>
     )
-  }
+  } 
 }
 
 export default Button

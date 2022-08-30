@@ -2,6 +2,8 @@ import Profile from "../Profile/Profile";
 import './Comment.scss';
 
 const Comment = ({ comment }) => {
+    // create a comment with received comment data
+
     const date = new Date(comment.timestamp).toDateString();
 
   return (
