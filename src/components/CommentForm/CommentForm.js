@@ -11,7 +11,7 @@ const CommentForm = () => {
     event.preventDefault();
   }
 
-  return (
+  return ( 
     <div className="comment-form">
         <span className="comment-form__count">3 Comments</span>
         
