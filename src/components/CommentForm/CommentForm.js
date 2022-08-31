@@ -1,6 +1,5 @@
 import commentIconUrl from '../../assets/icons/add_comment.svg';
 import profileUrl from '../../assets/images/Mohan-muruge.jpg';
-import Button from '../Button/Button';
 import './CommentForm.scss';
 import Profile from '../Profile/Profile';
 import '../Button/Button.scss';

@@ -70,7 +70,7 @@
                 width: 30%;
             }
         }
-
+ 
         &--right{
             @include desktop{
                 display: flex;
@@ -82,30 +82,33 @@
         }
         
     }
+   
+}
 
-    &__button-container{
-        display: flex;
-        flex-direction: column;
 
-        @include tablet{
-            flex-direction: row-reverse;
-            border-top: 1px solid $border-color;
-            padding-top: 1.5rem;
-            margin-top: 1.5rem;
-        }
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+
+    @include tablet{
+        flex-direction: row-reverse;
+        border-top: 1px solid $border-color;
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
+
+.button{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    
+    @include tablet{
+        width: 20%;
     }
 
-    &__button{
-        text-transform: uppercase;
-        text-align: center;
-        margin-bottom: 0.8rem;
-        
-        @include tablet{
-            width: 20%;
-        }
-    }
-
-    &__cancle{
-        background: #000;
+    &--cancle{
+        background: white;
+        color: $primary-color;
     }
 }

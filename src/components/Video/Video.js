@@ -2,6 +2,7 @@ import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import VideoDescription from '../VideoDescription/VideoDescription';
 import NextVideoSection from '../NextVideoSection/NextVideoSection';
 import CommentSection from '../CommentSection/CommentSection';
+import './Video.scss';
 
 
 const Video = ({ videos, currentVideo }) => {
@@ -17,7 +18,7 @@ const Video = ({ videos, currentVideo }) => {
             </div>
             <div className="video__side">
                 <NextVideoSection
-                    videos={videos}
+                    videos={videos} 
                     currentVideo={currentVideo}
                 />
             </div>

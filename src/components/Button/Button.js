@@ -8,7 +8,7 @@ const Button = ({url, text, background, color, type}) => {
     return(
       <div className={`button ${background}`}>
         <button className={`button__btn ${color}`}>{text}</button>
-    </div>
+    </div> 
     )  
   } else{
     return (

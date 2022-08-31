@@ -1,18 +1,28 @@
 import './UploadVideo.scss';
 import uploadThumbnail from '../../assets/images/Upload-video-preview.jpg';
-import { Link, useNavigate } from 'react-router-dom';
-import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
 import publishIconUrl from '../../assets/icons/publish.svg'
+import '../../components/Button/Button.scss';
+import { postVideo } from '../../utils/axiosVideo';
+import axios from 'axios';
 
 const UploadVideo = () => {
-  let navigate = useNavigate();
-  const handleUpload = (event) => {
+
+  const handleSubmit = (event) => {
+
     event.preventDefault();
-    alert("Video Uploaded!");
-    // redirect to home page
-    navigate("/");
+
+    postVideo({
+      title: event.target.title.value,
+      description: event.target.description.value
+    }) 
+    .then(response => {
+      console.log(response.data);
+    });
+
+    // alert("Video Uploaded!");
   } 
-  
+
   return (
     <>
       <div className="upload"> 
@@ -23,24 +33,27 @@ const UploadVideo = () => {
             <span className="upload__subtitle">Video Thumbnail</span>
             <img src={uploadThumbnail} alt="" className="upload__thumbnail" />
           </div>
-          <form className="upload__section--right">
+
+          <form className="upload__section--right" onSubmit={handleSubmit}>
             <div className="upload__section">
               <label htmlFor="title" className="upload__subtitle">Title Your Video</label>
-              <input id="title" type="text" className="upload__input" placeholder="Add a title to your video"/>
+              <input id="title" name="title" type="text" className="upload__input" placeholder="Add a title to your video"/>
             </div>
             <div className="upload__section">
               <label htmlFor="description" className="upload__subtitle">Add a Video Description</label>
-              <textarea id="description" className="upload__input upload__textarea" placeholder="Add a description to your video"></textarea>
+              <textarea id="description" name="description" className="upload__input upload__textarea" placeholder="Add a description to your video"></textarea>
             </div> 
+
+            <div className="buttons-container">
+              <div className="button">
+                <img className="button__icon" src={publishIconUrl} alt={publishIconUrl}/>
+                <button className="button__btn">Publish</button>
+              </div>
+              <Link to="/" className="button button--cancle">
+                <span className="button__btn button--cancle">Cancle</span>
+              </Link>
+            </div>
           </form>
-        </div>
-        <div className="upload__button-container">
-          <div className="upload__button" onClick={handleUpload}>
-            <Button type="submit" url={publishIconUrl} text="Publish"/>
-          </div>
-          <Link to="/" className="upload__button">
-            <Button url="" text="Cancle" background="background__white" color="color__Primary-Color"/>
-          </Link>
         </div>
       </div>
     </>

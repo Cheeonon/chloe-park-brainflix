@@ -10,7 +10,7 @@
     padding: 0.6rem 0.7rem;
     align-items: center;
     position: relative;
-
+ 
     &__icon{
         position: absolute;
         height: 1.5rem;
@@ -23,6 +23,7 @@
         color: white;
         text-transform: uppercase;
         font-weight: bold;
+        text-align: center;
     }
 }
 
