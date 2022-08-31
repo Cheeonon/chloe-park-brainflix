@@ -45,11 +45,11 @@ const UploadVideo = () => {
             </div> 
 
             <div className="buttons-container">
-              <div className="button">
+              <div className="button upload__button">
                 <img className="button__icon" src={publishIconUrl} alt={publishIconUrl}/>
                 <button className="button__btn">Publish</button>
               </div>
-              <Link to="/" className="button button--cancle">
+              <Link to="/" className="button upload__button button--cancle">
                 <span className="button__btn button--cancle">Cancle</span>
               </Link>
             </div>
