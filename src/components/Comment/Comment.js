@@ -1,15 +1,11 @@
 import Profile from "../Profile/Profile";
 import './Comment.scss';
+import dateFormat from '../../utils/dateFormat.js';
 
 const Comment = ({ comment }) => {
     // create a comment with received comment data
-
-    // convert given timstamp to rgith format
-    const dateArr = new Date(comment.timestamp).toLocaleDateString().split("/");
-    const newDateArr = dateArr.map(date => {
-        return date < 10 ? `0${date}` : date
-    })
-    const newDate = newDateArr.join("/");
+    const newDate = dateFormat(comment.timestamp);
+    
 
   return (
     <div className="comment">
@@ -25,4 +21,4 @@ const Comment = ({ comment }) => {
 )
 }
 
-export default Comment
+export default Comment 

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchVideos, fetchVideoWithId } from "../../utils/axiosVideo";
 import Video from "../../components/VideoSection/VideoSection";
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import Loader from "../../components/Loader/Loader";
 
 const HomePage = () => {
@@ -15,10 +15,9 @@ const HomePage = () => {
             setVideos(resolve.data);
             const currentVideoId = videosId || resolve.data[0].id;
 
-            return fetchVideoWithId(currentVideoId);
-        })
-        .then(resolve => {
-          setCurrentVideo(resolve.data);
+            return fetchVideoWithId((resolve)=>{
+                        setCurrentVideo(resolve.data);
+                    }, currentVideoId);
         })
     }, [videosId]);
 
@@ -32,7 +31,7 @@ const HomePage = () => {
         return (
                 <Loader />
         );
-    }
+    } 
 
     return (
         <Video currentVideo={currentVideo} videos={videos}/>

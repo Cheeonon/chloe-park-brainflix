@@ -4,9 +4,13 @@ import { Link } from 'react-router-dom';
 import publishIconUrl from '../../assets/icons/publish.svg'
 import '../../styles/Button.scss'
 import { postVideo } from '../../utils/axiosVideo';
+import UploadModal from '../../components/UploadModal/UploadModal';
+import { useState } from 'react';
 
 
 const UploadPage = () => {
+  const [isUploaded, setIsUploaded] = useState(false);
+
   const handleSubmit = (event) => {
 
     event.preventDefault();
@@ -16,11 +20,16 @@ const UploadPage = () => {
       description: event.target.description.value,
     });
 
-    alert("Video Uploaded!");
+    setIsUploaded(true);
   } 
+
+  const handleUploadAgain = () => {
+    setIsUploaded(!isUploaded);
+  }
 
   return (
     <>
+      {isUploaded && <UploadModal handleUploadAgain={handleUploadAgain}/>}
       <div className="upload"> 
         <h1 className="upload__title">Upload Video</h1>
 

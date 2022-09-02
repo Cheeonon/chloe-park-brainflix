@@ -12,12 +12,6 @@
         padding: calc($mobile-basic-spacing + 1rem) 0;
     }
 
-    &__count{
-        margin-bottom: $mobile-basic-spacing;
-        font-size: 0.9rem;
-        font-weight: bold;
-    }
-
     &__container{
         display: flex;
     }
@@ -59,7 +53,6 @@
         height: 5rem;
         width: 100%;
         margin-bottom: $mobile-basic-spacing;
-        resize: none;
         padding: 0.5rem 0.8rem;
 
         @include tablet{

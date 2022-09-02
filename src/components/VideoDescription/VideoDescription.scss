@@ -3,7 +3,7 @@
 @use '../../styles/partials/colors' as *;
 
 .video-desc{
-    margin: 0 $mobile-basic-spacing;
+    margin: 0 $mobile-basic-spacing; 
 
     @include tablet{
         margin: 0 $tablet-basic-spacing;

@@ -8,12 +8,10 @@ const CommentForm = () => {
   
   const handleDefault = (event) => {
     event.preventDefault();
-  }
+  } 
 
   return ( 
     <div className="comment-form">
-        <span className="comment-form__count">3 Comments</span>
-        
         <div className="comment-form__container">
             <Profile customClass="comment-form__profile" url={profileUrl} alt="Mohan Muruge"/>
             <form className="comment-form__add" >

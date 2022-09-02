@@ -40,6 +40,7 @@
 
         @include desktop{
             border-right: 1px solid $border-color;
+            min-width: 820px;
         }
     }
 
