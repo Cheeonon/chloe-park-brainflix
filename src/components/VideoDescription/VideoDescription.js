@@ -12,9 +12,9 @@ const VideoDescription = ({currentVideo}) => {
         <h1 className="video-desc__title">{currentVideo.title}</h1>
         <div className="video-desc__info">
             <div className="video-desc__info-section">
-                <span className="video-desc__channel video-desc__info--first">{currentVideo.channel}</span>
+                <span className="video-desc__channel video-desc__info--first">By {currentVideo.channel}</span>
                 <span>{date}</span>
-            </div>
+            </div> 
             <div className="video-desc__info-section">
                 <span className="video-desc__info--first">
                     <img className="video-desc__icon" src={views} alt="" />

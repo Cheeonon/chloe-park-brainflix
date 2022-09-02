@@ -2,7 +2,7 @@ import commentIconUrl from '../../assets/icons/add_comment.svg';
 import profileUrl from '../../assets/images/Mohan-muruge.jpg';
 import './CommentForm.scss';
 import Profile from '../Profile/Profile';
-import '../Button/Button.scss';
+import '../../styles/Button.scss';
 
 const CommentForm = () => {
   

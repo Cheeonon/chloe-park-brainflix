@@ -1,5 +1,5 @@
-@use '../../styles/partials/variables';
-@use '../../styles/partials/colors';
+@use '../styles/partials/variables';
+@use '../styles/partials/colors';
 
 .button{
     display: flex;
@@ -7,13 +7,13 @@
     border-radius: variables.$borde-radius;
     font-size: variables.$button-font-size;
     width: 100%;
-    padding: 0.6rem 0.7rem;
+    padding: 0.7rem 0.7rem;
     align-items: center;
     position: relative;
  
     &__icon{
-        position: absolute;
-        height: 1.5rem;
+        position: absolute; 
+        height: 1.3rem;
     }
     &__btn{
         border: none; 
@@ -22,15 +22,6 @@
         background-color: transparent;
         color: white;
         text-transform: uppercase;
-        font-weight: bold;
         text-align: center;
     }
-}
-
-.color__Primary-Color{
-    color: colors.$primary-color;
-}
-
-.background__white{
-    background-color: white;
 }

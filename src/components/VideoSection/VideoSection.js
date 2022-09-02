@@ -2,7 +2,7 @@ import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import VideoDescription from '../VideoDescription/VideoDescription';
 import NextVideoSection from '../NextVideoSection/NextVideoSection';
 import CommentSection from '../CommentSection/CommentSection';
-import './Video.scss';
+import './VideoSection.scss';
 
 
 const Video = ({ videos, currentVideo }) => {

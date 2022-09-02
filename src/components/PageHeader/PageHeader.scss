@@ -11,7 +11,7 @@
 
     @include tablet{
         flex-direction: row;
-        padding: 0 $tablet-basic-spacing;
+        padding: 0 $tablet-basic-spacing; 
     }
 
     @include desktop{
@@ -79,7 +79,6 @@
     }
 
     &__upload{
-        height: $header-spacing;
         display: flex;
         width: 100%;
         justify-content: space-between;

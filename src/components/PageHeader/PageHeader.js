@@ -3,16 +3,15 @@ import logoUrl from '../../assets/logo/BrainFlix-logo.svg';
 import profileUrl from '../../assets/images/Mohan-muruge.jpg';
 import uploadIconUrl from '../../assets/icons/upload.svg';
 import searchIconUrl from '../../assets/icons/search.svg';
-
+import '../../styles/Button.scss';
 import './PageHeader.scss'
-import Button from '../Button/Button';
+
 import Profile from '../Profile/Profile';
 import { NavLink } from 'react-router-dom';
 
-
 export default function Header(){
-
-    return(
+ 
+    return( 
         <header className="nav">
             <NavLink to="/">
                 <img className="nav__logo" src={logoUrl} alt="brainflix logo"/>
@@ -25,8 +24,9 @@ export default function Header(){
                 <Profile customClass="nav__profile--mobile" url={profileUrl} alt="Mohan Muruge"/>
             </div>
             <div className="nav__upload">
-                <NavLink to="/upload" className="nav__button">
-                   <Button url={uploadIconUrl} text="Upload" />
+                <NavLink to="/upload" className="button">
+                    <img className="button__icon" src={uploadIconUrl} alt={uploadIconUrl}/>
+                    <button className="button__btn">Upload</button>
                 </NavLink>
                 <Profile customClass="nav__profile--tablet" url={profileUrl}/>
             </div>

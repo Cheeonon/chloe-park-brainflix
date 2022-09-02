@@ -1,0 +1,42 @@
+@use '../../styles/partials/colors';
+
+.loader__container{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.loader{
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      border: 0.5rem solid lightgray;
+      border-top: 1.2rem solid colors.$primary-color;
+      border-radius: 50%;
+      animation: infinite spin 2s;
+      margin: 3rem;
+
+      &__column{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+      }
+
+      &__text{
+            font-size: 2rem;
+            font-weight: bold;
+            color: colors.$brainFlix-darkblue
+      }
+}
+
+@keyframes spin {
+      from{
+            transform: rotate(0deg);
+      }
+      to{
+            transform: rotate(360deg);
+      }
+}

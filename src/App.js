@@ -7,7 +7,6 @@ import UploadPage from './pages/UploadPage/UploadPage';
 
 function App() {
   return (
-    <>
     <BrowserRouter>
       <PageHeader />
       <Routes>
@@ -16,7 +15,6 @@ function App() {
         <Route path="/videos/:videosId" element={<HomePage />}></Route>
       </Routes>
     </BrowserRouter>
-    </>
   );
 }
 

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { fetchVideos, fetchVideoWithId } from "../../utils/axiosVideo";
-import Video from "../../components/Video/Video";
+import Video from "../../components/VideoSection/VideoSection";
 import { useParams } from 'react-router-dom';
+import Loader from "../../components/Loader/Loader";
 
 const HomePage = () => {
     const [videos, setVideos] = useState(null);
@@ -28,7 +29,9 @@ const HomePage = () => {
 
     // wait until receiving data and get the image url
     if (!currentVideo) {
-        return null;
+        return (
+                <Loader />
+        );
     }
 
     return (
@@ -36,4 +39,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage
+export default HomePage 
