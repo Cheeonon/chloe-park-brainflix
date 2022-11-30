@@ -24,4 +24,8 @@
         text-transform: uppercase;
         text-align: center;
     }
+
+    &:hover{
+        transform: scale(1.02);
+    }
 }

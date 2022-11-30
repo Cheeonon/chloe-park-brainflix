@@ -7,7 +7,6 @@ import { postVideo } from '../../utils/axiosVideo';
 import UploadModal from '../../components/UploadModal/UploadModal';
 import { useState } from 'react';
 
-
 const UploadPage = () => {
   const [isUploaded, setIsUploaded] = useState(false);
 

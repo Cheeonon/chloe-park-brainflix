@@ -15,6 +15,10 @@
         width: unset;
     }
 
+    &:hover{
+        transform: scale(1.02);
+    }
+
     &__image{
         min-width: 7rem;
         height: 3.5rem;
