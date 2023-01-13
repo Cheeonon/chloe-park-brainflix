@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchVideos, fetchVideoWithId } from "../../utils/axiosVideo";
 import Video from "../../components/VideoSection/VideoSection";
-import { Navigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Loader from "../../components/Loader/Loader";
 
 const HomePage = () => {
